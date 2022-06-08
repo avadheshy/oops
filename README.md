@@ -24,7 +24,7 @@ class ClassName:
    .
    .
    .Statement-N
-   ```
+```
   
   #### Creating an empty class
   
@@ -208,11 +208,12 @@ emp1 = employee('harshit',22,1000)
 emp2 = childemployee1('arjun',23,2000)
  
 print(emp1.age)
-print(emp2.age)```
+print(emp2.age)
+```
 ``` 
 output:22,23
 ```
-###### Hierarchical Inheritance:
+## Hierarchical Inheritance:
 Hierarchical level inheritance enables more than one derived class to inherit properties from a parent class.
 ```python 
 class employee():
@@ -237,11 +238,11 @@ emp2 = employee('arjun',23,2000)
  
 print(emp1.age)
 print(emp2.age)
-'''
+```
 ``` 
 output : 22,23 
 ```
-##### Multiple Inheritance:
+#####  Multiple Inheritance:
 Multiple level inheritance enables one derived class to inherit properties from more than one base class.
 ```python
 class employee1()://Parent class
