@@ -285,7 +285,7 @@ it is a property of an object which allows it to take multiple forms.
 #### Polymorphism is of two types:
 
 * Compile-time Polymorphism:
-A compile-time polymorphism also called as static polymorphism which gets resolved during the compilation time of the program. One common example is “method overloading”. 
+A compile-time polymorphism also called as static polymorphism which gets resolved during the compilation time of the program. One common example is “__method overloading__”. 
 ```python
 class employee1():
     def name(self):
@@ -328,31 +328,21 @@ Rahul is his name
 
 ```
 * Run-time Polymorphism:
-A run-time Polymorphism is also, called as dynamic polymorphism where it gets resolved into the run time. One common example of Run-time polymorphism is “method overriding”. 
+A run-time Polymorphism is also, called as dynamic polymorphism where it gets resolved into the run time. One common example of Run-time polymorphism is “__method overriding__”. 
+Example:
 ```python 
-class employee():
-    def __init__(self,name,age,id,salary):  
-        self.name = name
-        self.age = age
-        self.salary = salary
-        self.id = id
-def earn(self):
+from abc import ABC,abstractmethod
+from curses.ascii import EM
+class Person(ABC):
+    def emp_id(self):    #Abstraction
         pass
  
-class childemployee1(employee):
+class Employee(Person):
+    def emp_id(self):
+        print("emp_id is 12345")
  
-   def earn(self):#Run-time polymorphism
-      print("no money")
- 
-class childemployee2(employee):
- 
-   def earn(self):
-       print("has money")
- 
-c = childemployee1
-c.earn(employee)
-d = childemployee2
-d.earn(employee)
+emp1 = Employee()
+emp1.emp_id()
 
 ```
 ```
@@ -360,46 +350,57 @@ Output: no money, has money`
 
 ```
 ### 2.5 Encapsulation
-In a raw form, encapsulation basically means binding up of data in a single class. Python does not have any private keyword, unlike Java. A class shouldn’t be directly accessed but be prefixed in an underscore.
+Encapsulation in Python describes the concept of bundling data and methods within a single unit. So, when you create a class, it means you are implementing encapsulation.Also, encapsulation allows us to restrict accessing variables and methods directly and prevent accidental data modification by creating private data members and methods within a class.
+#### Access Modifiers in Python
+Encapsulation can be achieved by declaring the data members and methods of a class either as private or protected. But In Python, we don’t have direct access modifiers like public, private, and protected. We can achieve this by using single underscore and double underscores.
+
+Access modifiers limit access to the variables and methods of a class. Python provides three types of access modifiers private, public, and protected.
+
+* __Public Member__: Accessible anywhere from otside oclass.
+* __Private Member__: Accessible within the class
+* __Protected Member__: Accessible within the class and its sub-classes
+Example
 ```python
-class employee():
-def __init__(self):
-self.__maxearn = 1000000
-def earn(self):
-print("earning is:{}".format(self.__maxearn))
- 
-def setmaxearn(self,earn)://setter method used for accesing private class
-self.__maxearn = earn
- 
-emp1 = employee()
-emp1.earn()
- 
-emp1.__maxearn = 10000
-emp1.earn()
- 
-emp1.setmaxearn(10000)
-emp1.earn()
+class Employee:
+    def __init__(self, name, salary,project):
+        self.name = name  # public data member
+        self._salary = salary # protected member
+        self.__project = project # private member
+    def show(self):
+        print(f'employee name is {self.name}, salary is {self._salary}') 
+        print(f'project name is {self.__project}')
+
+# creating object of a class
+emp = Employee('Jessa', 10000,'abc')
+emp.show()
+print(emp._salary) # name mangling
+print(emp._Employee__project) # name mangling
 ```
 ```
 Output:
-earning is:1000000,earning is:1000000,earning is:10000
+employee name is Jessa, salary is 10000
+project name is abc
+10000
+abc
 ```
 ### 2.6 Abstraction
 
 Suppose you booked a movie ticket from bookmyshow using net banking or any other process. You don’t know the procedure of how the pin is generated or how the verification is done. This is called ‘abstraction’ from the programming aspect, it basically means you only show the implementation details of a particular process and hide the details from the user. It is used to simplify complex problems by modeling classes appropriate to the problem.
 An abstract class cannot be instantiated which simply means you cannot create objects for this type of class. It can only be used for inheriting the functionalities.
+Example
 ```python
 from abc import ABC,abstractmethod
-class employee(ABC):
-def emp_id(self,id,name,age,salary):    //Abstraction
-pass
+from curses.ascii import EM
+class Person(ABC):
+    def emp_id(self):    #Abstraction
+        pass
  
-class childemployee1(employee):
-def emp_id(self,id):
-print("emp_id is 12345")
+class Employee(Person):
+    def emp_id(self):
+        print("emp_id is 12345")
  
-emp1 = childemployee1()
-emp1.emp_id(id)
+emp1 = Employee()
+emp1.emp_id()
 ```
 ```
 Output: emp_id is 12345
