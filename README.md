@@ -1,11 +1,20 @@
 # Introduction of Object Oriented Programming in Python 
-
 ## Abstract
+With the incrementing need of representing realworld objects into software programs, object oriented
+programming has emerged as one of the popular methods to
+do so. Python is one such object oriented programming
+language, that is used for performing a variety of tasks such as
+interactive desktop application development, web application
+development, artificial intelligence and image processing, and
+many more applications. In this we concentrates on how
+object oriented concepts can be implemented using the python
+programming language.
 
-In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming. The main concept of OOPs is to bind the data and the functions that work on that together as a single unit so that no other part of the code can access this data. 
+
+ 
 
 ##  1. Introduction
-
+In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming. The main concept of OOPs is to bind the data and the functions that work on that together as a single unit so that no other part of the code can access this data.
 ![OOps](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200623174126/Python-OOPS-Concept.png)
 
 ## 2. Main Concepts of Object-Oriented Programming (OOPs) 
@@ -143,7 +152,7 @@ class Base():
 class child(Base):
    pass
 ```
-###### Single Inheritance:
+###### 2.3.1 Single Inheritance:
 Single level inheritance enables a derived class to inherit characteristics from a single parent class.
 Example 
 ```python
@@ -171,7 +180,7 @@ output :
 empolyee name is abc  and age :21
 employee id is 1122,salary is 50000
 ```
-###### Multilevel Inheritance:
+###### 2.3.2 Multilevel Inheritance:
 Multi-level inheritance enables a derived class to inherit properties from an immediate parent class which in turn inherits properties from his parent class.
 Example
 ```python
@@ -207,7 +216,7 @@ empolyee name is abc  and age :21
 employee id is 1122,salary is 50000
 number of employee is under the manager abc is 11
 ```
-## Hierarchical Inheritance:
+#### 2.3.3 Hierarchical Inheritance:
 Hierarchical level inheritance enables more than one derived class to inherit properties from a parent class.
 Example:
 ```python 
@@ -245,7 +254,7 @@ employee name is ram
 manager name is def
 employee name is sita
 ```
-#####  Multiple Inheritance:
+#####  2.3.4 Multiple Inheritance:
 Multiple level inheritance enables one derived class to inherit properties from more than one base class.
 ```python
 class Manage():
@@ -406,7 +415,10 @@ emp1.emp_id()
 Output: emp_id is 12345
 ```
 ## 4. Conclusion
-
+ Python being an object
+oriented programming language provides all the features of
+OOP such as inheritance, abstraction, polymorphism and
+encapsulation.
 ## 5. References
 1. https://www.geeksforgeeks.org/python-oops-concepts
 2. https://www.programiz.com/python-programming/object-oriented-programming
