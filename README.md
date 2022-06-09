@@ -1,4 +1,4 @@
-# Introduction of Object Oriented Programming in Python 
+# Introduction to Object Oriented Programming in Python
 ## Abstract
 With the incrementing need of representing realworld objects into software programs, object oriented
 programming has emerged as one of the popular methods to
@@ -24,7 +24,7 @@ A class is a collection of objects. A class contains the blueprints or the proto
 #### Some points on Python class:  
 * Classes are created by keyword class.
 * Attributes are the variables that belong to a class.
-* Attributes are always public and can be accessed using the dot (.) operator. Eg.: Myclass.Myattribute
+* Attributes are always public and can be accessed using the dot (.) operator.
 
 #### Class Definition Syntax:
 ```python
@@ -144,7 +144,7 @@ yes
 ### 2.3 Inheritance
 It generally means “inheriting or transfer of characteristics from parent to child class without any modification”. The new class is called the derived/child class and the one from which it is derived is called a parent/base class.
 #### Types of inheritance
-![](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/07/Types-of-Inheritance.jpg)
+
 syntax of inheritance
 ```python
 class Base():
@@ -415,13 +415,11 @@ emp1.emp_id()
 Output: emp_id is 12345
 ```
 ## 4. Conclusion
- Python being an object
-oriented programming language provides all the features of
-OOP such as inheritance, abstraction, polymorphism and
-encapsulation.
+Python being an object oriented programming language provides all the features of OOP such as inheritance, abstraction, polymorphism and encapsulation.
 ## 5. References
 1. https://www.geeksforgeeks.org/python-oops-concepts
 2. https://www.programiz.com/python-programming/object-oriented-programming
 3. https://www.edureka.co/blog/object-oriented-programming-python
+4. https://pynative.com/python-encapsulation
 
 
