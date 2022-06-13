@@ -305,6 +305,7 @@ It is a property of an object which allows it to take multiple forms.
 * Compile-time Polymorphism:
 A compile-time polymorphism also called as static polymorphism which gets resolved during the compilation time of the program.
 ### 4.1 Method overloading
+Given a single method or function, the number of parameters can be specified by you. This process of calling the same method in different ways is called method overloading.
 ```python
 class employee1():
     def name(self):
@@ -350,6 +351,7 @@ Rahul is his name
 A run-time Polymorphism is also, called as dynamic polymorphism where it gets resolved into the run time.
 
 ### 4.2 method overriding
+Method overriding is an ability of any object-oriented programming language that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes. When a method in a subclass has the same name, same parameters or signature and same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
 Example:
 ```python 
 from abc import ABC,abstractmethod
